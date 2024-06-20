@@ -36,7 +36,7 @@ let numInNumber = Number(num);
 
 let isLoggedIn = true;
 let  isLoggedInNumber = Number(isLoggedIn); // true - 1 and false - 0
-console.log(isLoggedInNumber)
+// console.log(isLoggedInNumber)
 
 //  true - converted to 1 and false -> 0 in Number conversion
 // vice verse also true in case of Number to boolean conversion
@@ -44,12 +44,39 @@ console.log(isLoggedInNumber)
 // let activeAcc = "" //blank converted into false
 let activeAcc = "Rajn" // converted into  true
 let activeAccBool = Boolean(activeAcc);
-console.log(activeAccBool)
+// console.log(activeAccBool)
 
 
 // number to string -> conversion
 let stringNumber = 789;
 let numberInString = String(stringNumber)
-console.log(numberInString)
-console.log( typeof numberInString)
-console.log(typeof stringNumber)
+// console.log(numberInString)
+// console.log( typeof numberInString)
+// console.log(typeof stringNumber)
+
+
+// +++++++++++++++++++++++ operations +++++++++++++++++++++++++++
+
+let value = 78;
+let negValue = -value;
+// console.log(negValue);
+
+let str1 = "Hello"
+let str2 = " Chaudhary"
+let str3 = str1 + str2
+// console.log(str3) // this is called concateation of the string
+
+
+// operators
+// console.log(2+2); // 4 -> addition
+// console.log(2-2);// 0 -> substraction
+// console.log(2/2); //division -> 1
+// console.log(2*2); //4 -> multiplictaion
+// console.log(2**2); // -> 2^2 = 4 - power
+// console.log(2%2);  //-> 0 - remainder
+
+// console.log("1" + 2) //1st is string then rest all string
+// console.log(1 + "2") //after 2nd all treated as string
+// console.log("1" + 2 +2) //like first rule
+// console.log(1 + 2 + "2") //1, 2 is treated as number rest as string
+
