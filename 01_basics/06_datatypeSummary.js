@@ -44,17 +44,50 @@ const myFunction = function(){
 
 myFunction();
 
-console.log("Data type return by the typeof() function -primitive ->")
-console.log("Number -> ",typeof(score));
-console.log("Boolean -> ",typeof(isLoggedIn));
-console.log("Undefined -> ",typeof(userEmail));
-console.log("Symbol -> ",typeof(id));
-console.log("Null -> ",typeof(outsideTemp));
-console.log("String -> ",typeof(name));
-console.log("BigInt -> ",typeof(bigNumber));
+// console.log("Data type return by the typeof() function -primitive ->")
+// console.log("Number -> ",typeof(score));
+// console.log("Boolean -> ",typeof(isLoggedIn));
+// console.log("Undefined -> ",typeof(userEmail));
+// console.log("Symbol -> ",typeof(id));
+// console.log("Null -> ",typeof(outsideTemp));
+// console.log("String -> ",typeof(name));
+// console.log("BigInt -> ",typeof(bigNumber));
 
 
-console.log("Data type return by the typeof() function - non-primitive ->")
-console.log("Array -> " ,typeof(hero))
-console.log("Object -> " ,typeof(userDetail))
-console.log("Function -> " ,typeof(myFunction))
+// console.log("Data type return by the typeof() function - non-primitive ->")
+// console.log("Array -> " ,typeof(hero))
+// console.log("Object -> " ,typeof(userDetail))
+// console.log("Function -> " ,typeof(myFunction))
+
+// ++++++++++++++++++++++++++  Stack And Heap ++++++++++++++++++++++++++++++
+// stack(primitive)-in the stack we obtain a copy of that varible means no change will reflect to orginal ,
+//  heap(Non - primitive) -> we obtain a reference means change reflects directly to the orginal varible
+
+
+// stack
+let userName = "Mist299"
+let newUser = userName;
+// console.log(userName);
+// console.log(newUser);
+
+// now we change in the newUser -> it not get reflected to the userName -> b/c of copy of the userName pass to the newUser variable
+
+newUser = "Chemm23";
+// console.log(userName);
+// console.log(newUser);
+
+// now we see that the newUser value change but userName value remain unchanged
+
+let user ={
+    "email":"abc@gmail.com",
+    "upi":"rajneesh@verma",
+    "contact":87566994456
+}
+
+console.log(user);
+// user["contact"]=8756699455;
+let user2 = user;
+user2["contact"] = 8756699455
+// now we see that the change were reflected in the orginal object
+console.log(user);
+
