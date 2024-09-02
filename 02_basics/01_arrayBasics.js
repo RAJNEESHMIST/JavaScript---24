@@ -57,7 +57,7 @@ const num = [45,56,89,7,54];
 console.log(" A ",num)
 
 console.log(num.slice(0,3));
-console.log(" B ",num)
+console.log(" B ",num)  
 
 
 // 9.splice(star,end) - it return the part of the array end index inclusive and also affect the orginal array
