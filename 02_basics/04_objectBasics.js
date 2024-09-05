@@ -61,9 +61,30 @@ const user = [
     }
 ]
 
-console.log(user[1].username)
-console.log(tinderUser)
+// console.log(user[1].username)
+// console.log(tinderUser)
 
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser))
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser))
+// console.log(Object.entries(tinderUser))
+
+// destructuring - it done for array and object as well
+// object destructuring of the object
+
+const course = {
+    coursename : "Js in Hindi",
+    price : "9999",
+    instructor : "Mr. Histesh Choudhary"
+}
+
+// destructure means we are using tha object element independently
+// for example -  if we have to use the coursename of the course object so we use like this
+// course.coursename - like syntax but there is a problem in this is that we write it again and agin is not a good practice so at this place we use the destructure like as
+
+// const {coursename } = course
+// console.log(coursename)
+// console.log(coursename) //now in this we not need to write course.coursename like syantax again and again
+
+const {coursename:subject} = course // we can also simplify the key at our own convinience
+console.log(subject) //it is also working properly
+
