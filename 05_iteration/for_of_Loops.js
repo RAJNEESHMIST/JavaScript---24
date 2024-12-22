@@ -42,8 +42,19 @@ map.set(2 ,"India");
 // }
 
 for (const [key,val] of map) {
-    console.log(`${key} :- ${val}`); //in this values are print only key value like this-
+    //console.log(`${key} :- ${val}`); //in this values are print only key value like this-
     // In :- India
     // Bh :- India
 }
 
+//but forof loop is not applicable on object let's understand with example
+let myobject = {
+    'Name':'Rajneesh Verma',
+    'Uid':'23bcs80093'
+}
+
+// for (const [key,value] of myobject) {
+//     //console.log(`${key} :- ${val}`); // this shows error as the object is not iteratable
+// }
+
+//Note - forof loop not applicable on objects
