@@ -17,5 +17,18 @@ function print(item){
 // subject.forEach(print);//this also works 
 
 subject.forEach((val,index, arr) => { //we can also access these things along with this using for  each loop
-    console.log(val,index,arr);
+    // console.log(val,index,arr);
 })
+
+
+const coding = ['java','c++','DAA','DSA','python','Coa'];
+
+// const values = coding.forEach((item) => { //lets checking is anything return by the forEach loop
+//     console.log(item)
+//     return item
+// })
+
+// console.log(values); //nothing return anything by this syntax
+ 
+//note -> forEach() take argument of call back
+
